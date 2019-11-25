@@ -1,0 +1,41 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+  <article class="media content-section">
+    <div class="media-body">
+      <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+      <img  class="post-img"src="{{ post.event_image.url }}">
+      <span class="post-sections">
+          <img src="{% static 'img/location.png' %}"> 
+          <p class="article-content">{{ post.venue }}</p>
+        </span>
+        <span class="post-sections">
+            <img src="{% static 'img/map.png' %}"> 
+            <p class="article-content">{{ post.location }}</p>
+        </span>
+        <span class="post-sections">
+            <img src="{% static 'img/clock.png' %}"> 
+            <p class="article-content">{{ post.start_time }}</p>
+        </span>
+        <span class="post-sections">
+            <img src="{% static 'img/clock.png' %}"> 
+            <p class="article-content">{{ post.end_time }}</p>
+        </span>
+        <span class="post-sections">
+            <img src="{% static 'img/book.png' %}"> 
+            <p class="article-content">{{ post.short_description }}</p>
+        </span>
+      <div class="article-metadata">
+        <img class="rounded-circle article-img" src="{{ object.author.profile.image.url }}">
+        <a class="mr-2" href="{% url 'user-posts' object.author.username %}">{{ object.author }}</a>
+        <small class="text-muted">{{ object.date_posted|date:"F d, Y" }}</small>
+        {% if object.author == user %}
+          <div>
+            <a class="btn  btn-sm mt-1 mb-1" href="{% url 'post-update' object.id %}">Edit</a>
+            <a class="btn  btn-sm mt-1 mb-1" href="{% url 'post-delete' object.id %}">Delete</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+{% endblock content %}

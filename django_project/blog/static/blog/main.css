@@ -1,0 +1,261 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #041159;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: white;
+
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #F2CB05;
+  text-decoration:line-through;
+  transition: all ease-in;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+  font-family: 'Odibee Sans', cursive;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+main{
+  width:100%;
+  padding: 0;
+  margin:0;
+}
+
+.carousel-item{
+  height: 500px !important;
+  text-align: center;
+  margin-top:-180px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.carousel-item h2{
+  position: relative;
+  padding: 1em;
+  color: white;
+  top:230px;
+  font-family: 'Bungee', cursive;
+  font-size: 35px;
+}
+.carousel-item p {
+  position: relative;
+  padding: 1em;
+  color: white;
+  top:230px;
+}
+.hero-button{
+  border: 1px solid #F2CB05;
+  color:#041159;
+  position: relative;
+  top:230px;
+  padding:0.5em;
+  border-radius: 5px;
+  background-color: #F2CB05;
+}
+.addnew{
+  border: 1px solid #F2CB05;
+  padding: 0.5em;
+  color:#041159 !important;
+  background-color: #F2CB05;
+  border-radius:5px ;
+}
+.addnew:hover{
+  background-color:#041159 !important;
+  text-decoration: none !important;
+  color: #F2CB05 !important;
+}
+.bracket{
+  font-family: 'Odibee Sans', cursive;
+  color: #F2CB05;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.logo-text{
+  font-family: 'Odibee Sans', cursive;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.btn{
+  background-color: #F2CB05;
+  color:#041159;
+  border: none;
+}
+
+.btn:hover{
+  background-color:#041159;
+  color:#F2CB05 !important;
+}
+
+.posts{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.posts article{
+  margin: 1em;
+}
+
+.posts h2 a, .article-title{
+  text-align: center;
+  font-family: 'Odibee Sans', cursive;
+  color: #041159 !important;
+}
+
+.posts h2 {
+  text-align: center;
+}
+
+
+footer{
+  background-color: #041159;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top:10px ;
+}
+
+.post-img{
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+
+.post-sections img{
+  width:20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+ .post-sections{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-item{
+    height: 600px;
+  }
+  .carousel-item h2{
+    position: relative;
+    padding: 1em;
+    color: white;
+    top:220px;
+    font-family: 'Bungee', cursive;
+    font-size: 20px;
+  }
+  .carousel-item p {
+    position: relative;
+    padding: 1em;
+    color: white;
+    top:220px;
+  }
+  .hero-button{
+    border: 1px solid #F2CB05;
+    color:#041159;
+    position: relative;
+    top:220px;
+    padding:0.5em;
+    border-radius: 5px;
+    background-color: #F2CB05;
+  }
+}
+
+.media-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.media-body img{
+  align-self: center;
+  margin-bottom:5px ;
+}
+
+.content-section form{
+  margin: 2em;
+}
