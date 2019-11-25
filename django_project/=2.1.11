@@ -1,0 +1,3 @@
+Requirement already up-to-date: django in /Users/dessiemompati/Desktop/Development/code_snippets/Django_Blog/12-Password-Reset/myenv/lib/python3.7/site-packages (2.2.7)
+Requirement already satisfied, skipping upgrade: pytz in /Users/dessiemompati/Desktop/Development/code_snippets/Django_Blog/12-Password-Reset/myenv/lib/python3.7/site-packages (from django) (2018.5)
+Requirement already satisfied, skipping upgrade: sqlparse in /Users/dessiemompati/Desktop/Development/code_snippets/Django_Blog/12-Password-Reset/myenv/lib/python3.7/site-packages (from django) (0.3.0)
